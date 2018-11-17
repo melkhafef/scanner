@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #15ad76;
+    border: 2px solid black;
+}
+.myInfo {
+    text-align: center;
+    margin: 10px;
+    width: 100%;
+}
+.inputC {
+    text-align: center;
+    margin: 10px;
+width: 100%;
+}
+
+.scannerOut {
+    text-align: center;
+    margin: 10px;
+    width: 100%;
+}
+#scannerOutput{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    height: 300px;
+    overflow: scroll;
+}
+
+.buttons {
+    text-align: center;
+    margin: 10px;
+}
+#scanner,
+#langC {
+    display: block;
+}
+
+textarea {
+    width: 80%;
+    height: 200px;
+    ;
+}
+.token{
+    border: 2px solid black;
+    border-radius: 10%;
+    height: 15%;
+    padding: 5px;
+    margin: 5px;
+    background-color: aqua;
+}
+.error{
+    background-color:red;
+}
+
+@media screen and (min-width:700px) {
+    body {
+        width: 700px;
+        margin: 0 auto;
+    }
+}
