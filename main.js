@@ -114,7 +114,7 @@
      string = '';
      scannerOutput.innerHTML = '';
      input = input.split('');
-     input.push(' ');
+    
      for(o=0;o<input.length;o++){
          if(input[o]==='\n'){
              input[o]=' ';
@@ -136,10 +136,12 @@
 
          }
      }
+ input.push(' ');
      for (i = 0; i < input.length; i++) {
          if (input[i] !== ' ') {
              string += input[i];
          } else {
+if(string!==''){
              valid = false;
              for (k = 0; k < keyWords.length; k++) {
                  if (string === keyWords[k]) {
@@ -215,14 +217,15 @@
                      valid = true;
                  }
              }
-            /* if (valid === false) {
+             if (valid === false) {
                      tokenName = 'ERROR';
                      attributeValue = string;
                      scannerOutput.insertAdjacentHTML('beforeend', `<div class='token error'> < ${tokenName} ; ' ${attributeValue} '  > </div>`);
                      valid = true;
                  
-             }*/
+             }
              string = '';
+}
          }
      }
  }
