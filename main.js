@@ -114,7 +114,7 @@
      string = '';
      scannerOutput.innerHTML = '';
      input = input.split('');
-    
+    input.push(' ');
      for(o=0;o<input.length;o++){
          if(input[o]==='\n'){
              input[o]=' ';
@@ -136,7 +136,7 @@
 
          }
      }
- input.push(' ');
+ 
      for (i = 0; i < input.length; i++) {
          if (input[i] !== ' ') {
              string += input[i];
